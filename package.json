@@ -15,7 +15,9 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^1.1.9",
     "@tailwindcss/vite": "^4.0.3",
+    "ai": "^4.1.17",
     "bun": "^1.2.2",
     "hono": "^4.6.20",
     "tailwindcss": "^4.0.3"
