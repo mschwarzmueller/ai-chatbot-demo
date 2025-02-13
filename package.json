@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@hono/vite-dev-server": "^0.18.1",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/bun": "latest",
     "vite": "^6.0.11"
   },
@@ -20,6 +21,11 @@
     "ai": "^4.1.17",
     "bun": "^1.2.2",
     "hono": "^4.6.20",
-    "tailwindcss": "^4.0.3"
+    "rehype-highlight": "^7.0.2",
+    "rehype-stringify": "^10.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.1",
+    "tailwindcss": "^4.0.3",
+    "unified": "^11.0.5"
   }
 }

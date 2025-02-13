@@ -10,6 +10,10 @@ export default function Layout({ children }: PropsWithChildren) {
         ) : (
           <link rel="stylesheet" href="/static/assets/base.css" />
         )}
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.0/styles/github-dark.min.css"
+        ></link>
       </head>
       <body class="bg-stone-800 text-stone-50">
         <main class="max-w-[50rem] mx-auto">{children}</main>

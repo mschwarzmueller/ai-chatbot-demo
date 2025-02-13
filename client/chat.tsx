@@ -56,7 +56,7 @@ function Chat() {
         const messages = prevMessages.slice();
         messages[messages.length - 1] = {
           role: 'assistant',
-          content: messages[messages.length - 1].content + text,
+          content: text,
         };
         return messages;
       });
@@ -69,13 +69,15 @@ function Chat() {
         {chatMessages.length === 0 && <p>How may I help you?</p>}
         {chatMessages.map((msg) => (
           <article
-            class={msg.role === 'assistant' ? '' : 'text-stone-400'}
-          >
-            {msg.content}
-          </article>
+            class={`prose prose-invert prose-headings:font-bold ${msg.role === 'assistant' ? '' : 'text-stone-400'}`}
+            dangerouslySetInnerHTML={{ __html: msg.content }}
+          ></article>
         ))}
       </div>
-      <form onSubmit={handleSubmit} class="bg-stone-900 px-12 py-6 rounded -mx-12">
+      <form
+        onSubmit={handleSubmit}
+        class="bg-stone-900 px-12 py-6 rounded -mx-12"
+      >
         <p class="mb-4 flex flex-col gap-2">
           <label for="prompt" class="font-bold text-sm text-stone-300">
             Your Prompt
