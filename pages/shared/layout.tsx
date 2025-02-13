@@ -12,7 +12,7 @@ export default function Layout({ children }: PropsWithChildren) {
         )}
       </head>
       <body class="bg-stone-800 text-stone-50">
-        <main class="max-w-[50rem] my-6 mx-auto">{children}</main>
+        <main class="max-w-[50rem] mx-auto">{children}</main>
       </body>
     </html>
   );
